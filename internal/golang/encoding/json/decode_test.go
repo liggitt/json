@@ -1031,7 +1031,7 @@ var unmarshalTests = []struct {
 			Embed0q: Embed0q{Point: Point{Z: 17}},
 			embed:   embed{Q: 18},
 		},
-		err:                   fmt.Errorf("json: unknown field \"extra\""),
+		err:                   fmt.Errorf("json: unknown field \"e.extra\""),
 		disallowUnknownFields: true,
 	},
 	// issue 26444
